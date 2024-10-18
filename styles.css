@@ -1,0 +1,52 @@
+body {
+    background: #f5f5f4;
+    color: #232323;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 25px 50px;
+  }
+  
+  code {
+    color: #09507c;
+    background: #deedf2;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 15px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    border-color: #09507c;
+    background-color: #deedf2;
+  }
+  .guesses {
+    padding: 60px;
+    border: 3px dotted black;
+    display: grid;
+    box-sizing: content-box;
+    width: 20%;
+    height: auto;
+    /* grid-area: ; */
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto; 
+  }
+  .guess {
+    margin: 5px;
+    color: green;
+    border: 2px yellow solid;
+    padding: 
+    /* box-sizing: content-box; */
+    
+  }
+
+  
