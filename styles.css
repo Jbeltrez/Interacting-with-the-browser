@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
     background: #f5f5f4;
     color: #232323;
@@ -7,11 +10,16 @@ body {
     padding: 25px 50px;
   }
   
+  
+  
   code {
     color: #09507c;
     background: #deedf2;
     padding: 2px 10px;
     border-radius: 10px;
+  }
+  .remaining-guesses {
+    color: green
   }
   
   td {
@@ -32,21 +40,67 @@ body {
   }
   .guesses {
     padding: 60px;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
     display: grid;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     width: 20%;
     height: auto;
+    /* justify-content: center; */
     /* grid-area: ; */
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto; 
+
   }
   .guess {
+    display: flex;
     margin: 5px;
     color: green;
     border: 2px yellow solid;
-    padding: 
+    padding: 5px;
+    justify-content: center;
     /* box-sizing: content-box; */
     
   }
-
+  @keyframes colorful {
+      100%,
+      0% {
+        color: rgb(255, 0, 0);
+      }
+      8% {
+        color: rgb(255, 127, 0);
+      }
+      16% {
+        color: rgb(255, 255, 0);
+      }
+      25% {
+        color: rgb(127, 255, 0);
+      }
+      33% {
+        color: rgb(0, 255, 0);
+      }
+      41% {
+        color: rgb(0, 255, 127);
+      }
+      50% {
+        color: rgb(0, 255, 255);
+      }
+      58% {
+        color: rgb(0, 127, 255);
+      }
+      66% {
+        color: rgb(0, 0, 255);
+      }
+      75% {
+        color: rgb(127, 0, 255);
+      }
+      83% {
+        color: rgb(255, 0, 255);
+      }
+      91% {
+        color: rgb(255, 0, 127);
+      }
+    }
+  .congrats {
+    animation: colorful 5s infinite linear;
+    font-size: 100px;
+  }
   

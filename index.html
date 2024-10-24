@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-        
+        .btn {
+          margin: 5px;
+          justify-content: center;
+        }
 
     </style>
   </head>
@@ -14,11 +17,16 @@
     <div id="app">
         <h2 class="game-name">This is the guessing Game!!!</h2>
         <h3 class="instruction-title">The instructions are as follows</h3>
-        <ol class="instructions-list">
+        <div class="instructions">
+          <ol class="instructions-list">
             <li class="instruction">Guess a Number Between 1 and 100 when prompted in the window.</li>
             <li class="instruction">If you guess correct you win!</li>
             <li class="instruction">If you guess incorrect you will have another chance until there are no more chances.</li>
-        </ol>
+            <li class="remaining-guesses">Guesses Remaining: 5</li>
+          </ol>
+        </div>
+        <button class="begin-btn">Begin Game</button>
+        
     </div>
     <script src="index.js"></script>
   </body>
